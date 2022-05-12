@@ -1,0 +1,60 @@
+
+:root{ --uc-navbar-transform: -40px }
+:root[uidensity="compact"]{ --uc-navbar-transform: -34px }
+
+#navigator-toolbox > div{ display: contents; }
+:root[sessionrestored] :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: translateY(var(--uc-navbar-transform))
+}
+:root:is([customizing],[chromehidden*="toolbar"]) :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+#nav-bar:not([customizing]){
+  opacity: 0;
+  transition:  transform 150ms ease 1s, opacity 150ms ease 1s !important;
+  position: relative;
+  z-index: 2;
+}
+#TabsToolbar{ position: relative; z-index: 3 }
+
+/* Show when toolbox is focused, like when urlbar has received focus */
+#navigator-toolbox:focus-within > .browser-toolbar{
+  transform: none;
+  opacity: 1;
+  transition-duration: 250ms, 100ms !important;
+  transition-delay: 0s !important;
+}
+/* Show when toolbox is hovered */
+#titlebar:hover ~ .browser-toolbar,
+#nav-bar:hover,
+#nav-bar:hover + #PersonalToolbar{
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 250ms, 100ms !important;
+  transition-delay: 0s !important;
+}
+
+#nav-bar{
+padding-top: 1px;
+}
+
+#urlbar, #searchbar {
+    font-size: 1.15em;
+	text-align: center;
+    --urlbar-toolbar-height: 31px !important;
+	 color: #FFC0CB !important;
+
+
+}
+
+/* Bookmarks toolbar needs so extra rules */
+#PersonalToolbar{ transition: transform 200ms ease 1s !important; position: relative; z-index: 1 }
+
+/* Move up the content view */
+:root[sessionrestored]:not([inFullscreen]) > body > #browser{ margin-top: var(--uc-navbar-transform); }
+
+.urlbarView-row-inner,
+.urlbarView-no-wrap{ justify-content: center !important; }
+.urlbarView-url{ flex-grow: 0 !important; }
