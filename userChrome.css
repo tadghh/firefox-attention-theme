@@ -100,7 +100,10 @@
     box-shadow: 0 0 1px #000 !important;
 }
 
-
+/* New tab button */
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+  fill: pink;
+}
 
 
 
