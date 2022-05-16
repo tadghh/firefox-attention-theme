@@ -46,22 +46,21 @@
   transition: color 2s ease-out;
 
 }
-#urlbar:focus-within, #searchbar:focus-within {
+#urlbar:focus-within {
     font-size: 1.15em;
 	text-align: center;
     --urlbar-toolbar-height: 31px !important;
-	 color: #ff007f !important;
+	 color: #ff887f !important;
 	 background-color:black;
 
 
 }
-.browser-toolbar:focus-within{
-    background-color: transparent !important;
-    background-image: var(--toolbar-bgimage);
-    background-clip: padding-box;
-    color: rgb(181, 0, 144);
-	 --focus-outline-color: #DDD !important;
+/*shouldnt turn black on close*/
+#navigator-toolbox:focus-within:not(#tabs-newtab-button,.titlebar-buttonbox-container) {
+
 }
+
+/*area behind tabs active*/
 .browser-toolbar{
     background-color: transparent !important;
 
@@ -76,7 +75,7 @@
 /*  focused address bad selection */
 #urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
 #searchbar:focus-within:-moz-lwtheme {
- background-color: #000 !important; 
+ background-color: #0010 !important; 
 }
 
 /*  top of windows*/
@@ -102,6 +101,7 @@
 
 /* New tab button */
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+
   fill: pink;
 }
 
