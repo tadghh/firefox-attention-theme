@@ -46,6 +46,12 @@
   transition: color 2s ease-out;
 
 }
+/* Url bar outline when searching */
+#urlbar[open] > #urlbar-background {
+	border:none !important;
+
+  box-shadow: none !important;
+}
 #urlbar:focus-within {
     font-size: 1.15em;
 	text-align: center;
