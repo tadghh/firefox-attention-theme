@@ -40,9 +40,6 @@
 	text-align: center;
     --urlbar-toolbar-height: 31px !important;
 	 color: #FFC0CB !important;
-  -webkit-transition: color 2s ease-out;
-  -moz-transition: color 2s ease-out;
-  -o-transition: color 2s ease-out;
   transition: color 2s ease-out;
 
 }
@@ -57,7 +54,7 @@
 	text-align: center;
     --urlbar-toolbar-height: 31px !important;
 	 color: #ff887f !important;
-	 background-color:black;
+	
 
 
 }
@@ -68,11 +65,11 @@
 
 /*area behind tabs active*/
 .browser-toolbar{
-    background-color: transparent !important;
+    background-color: var(--firefox-grey) !important;
 
 }
 .tab-content{
-	background-color: #1c1b22 !important;
+	background-color: var(--firefox-grey) !important;
 }
 * {
 
@@ -81,29 +78,16 @@
 /*  focused address bad selection */
 #urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
 #searchbar:focus-within:-moz-lwtheme {
- background-color: #0010 !important; 
+ background-color: var(--firefox-grey) !important; 
 }
 
-/*  top of windows*/
-:root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive #navigator-toolbox {
-    border-top-color: #000 !important;
-}
+
 
 /*  area behind tabs */
 #navigator-toolbox:-moz-window-inactive:-moz-lwtheme {
     background-color: var(--firefox-grey) !important;
 }
 
-/*  selected tab text */
-.tabbrowser-tab[multiselected]:-moz-lwtheme, .tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
-    color: rgb(0, 0, 251);
-}
-
-
-/*  selectors around tabs */
-#TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab[visuallyselected="true"]:not(:focus) > .tab-stack > .tab-background:-moz-lwtheme {
-    box-shadow: 0 0 1px #000 !important;
-}
 
 /* New tab button */
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
@@ -111,40 +95,16 @@
   fill: pink;
 }
 
+#urlbar-background, #searchbar {
+  background-color: var(--firefox-grey) !important;
 
 
-/*  buttons on screen */
-.toolbarbutton-animatable-box, .toolbarbutton-1 {
-    color: inherit !important;
-    -moz-context-properties: fill, fill-opacity;
-    fill: rgb(0, 0, 255);
-    fill-opacity: var(--toolbarbutton-icon-fill-opacity);
 }
 
 
-/*  net tab icon */
-#tabs-newtab-button .toolbarbutton-icon {
-    border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0 !important;
-    padding: calc(var(--toolbarbutton-inner-padding) - (var(--tab-block-margin) / 4)) var(--toolbarbutton-inner-padding) calc(var(--toolbarbutton-inner-padding) + (var(--tab-block-margin) / 4) + var(--tabs-navbar-original-shadow-size)) !important;
-    -moz-context-properties: fill, fill-opacity;
-    fill: rgb(0, 0, 255);
-    fill-opacity: var(--toolbarbutton-icon-fill-opacity);
-}
 
 
-/*  other tab unfocused hovers */
-tab[visuallyselected="true"]:not([labelendaligned]):hover, #tabbrowser-tabs:not([closebuttons="activetab"]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([visuallyselected="true"], [labelendaligned]):hover {
-    --tab-label-mask-size: 1em;
-    color: #800e23;
-}
 
 
-/*  other selected moving tab background */
-#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected="true"]:-moz-lwtheme, #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected="true"]:-moz-lwtheme {
-    background-attachment: scroll, scroll, fixed;
-    background-color: transparent;
-    background-image: linear-gradient(var(--lwt-selected-tab-background-color, transparent), var(--lwt-selected-tab-background-color, transparent)), linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none);
-    background-position: 0 0, 0 0, right top;
-    background-repeat: repeat-x, repeat-x, no-repeat;
-    background-size: auto 100%, auto 100%, auto auto;
-}
+
+
