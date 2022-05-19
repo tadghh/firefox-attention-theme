@@ -33,7 +33,7 @@
 
 :root {
 	--firefox-grey: #1c1b22;
-	
+	--focused-color-theme: #fff;
 }
 #urlbar, #searchbar {
     font-size: 1.15em;
@@ -59,18 +59,23 @@
 
 }
 /*shouldnt turn black on close*/
-#navigator-toolbox:focus-within:not(#tabs-newtab-button,.titlebar-buttonbox-container) {
-
+#navigator-toolbox:focus-within{
+	background-color: var(--focused-color-theme) !important;
 }
 
 /*area behind tabs active*/
 .browser-toolbar{
-    background-color: var(--firefox-grey) !important;
+    background-color: inherit !important;
 
 }
 .tab-content{
-	background-color: var(--firefox-grey) !important;
+	background-color:  inherit !important;
 }
+
+.tabbrowser-tab:is([selected], [multiselected]):-moz-lwtheme {
+  color:black;
+}
+
 * {
 
 	 --focus-outline-color: transparent !important;
@@ -78,14 +83,14 @@
 /*  focused address bad selection */
 #urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
 #searchbar:focus-within:-moz-lwtheme {
- background-color: var(--firefox-grey) !important; 
+ background-color: var(--focused-color-theme) !important; 
 }
 
 
 
 /*  area behind tabs */
 #navigator-toolbox:-moz-window-inactive:-moz-lwtheme {
-    background-color: var(--firefox-grey) !important;
+    background-color: inherit;
 }
 
 
@@ -101,10 +106,30 @@
 
 }
 
+/*urlbar box shadow*/
+#urlbar[focused="true"] > #urlbar-background,
+#searchbar:focus-within {
+  box-shadow: none !important;
+}
 
-
-
-
-
-
-
+/*
+ * LightweightThemeConsumer will set the current lightweight theme's header
+ * image to the lwt-header-image variable, used in each of the following rulesets.
+ */
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
+  background-attachment: scroll, scroll, fixed;
+  background-color: transparent;
+  background-image: none !important;
+  background-position: 0 0, 0 0, right top;
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-size: auto 100%, auto 100%, auto auto;
+}
+/*shadows around tabs*/
+#tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
+  box-shadow:none !important;
+}
+/*Mouse hovering over tab color*/
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-color: pink !important;
+}
