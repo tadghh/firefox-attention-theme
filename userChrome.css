@@ -169,3 +169,8 @@ padding-top: 1px;
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
 
 }
+
+/*Line seperator between search results and address bar*/
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+  border-top: none !important;
+}
