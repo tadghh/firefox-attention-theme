@@ -1,11 +1,13 @@
 /*
 :root{ --uc-navbar-transform: -40px }
+
 :root[uidensity="compact"]{ --uc-navbar-transform: -34px }
 
 #navigator-toolbox > div{ display: contents; }
 :root[sessionrestored] :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
   transform: translateY(var(--uc-navbar-transform))
 }
+
 :root:is([customizing],[chromehidden*="toolbar"]) :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
   transform: none !important;
   opacity: 1 !important;
@@ -17,8 +19,8 @@
   position: relative;
   z-index: 2;
 }
-#TabsToolbar{ position: relative; z-index: 3 }
 
+#TabsToolbar{ position: relative; z-index: 3 }
 
 #navigator-toolbox:focus-within > .browser-toolbar{
   transform: none;
@@ -44,14 +46,10 @@ padding-top: 1px;
     font-size: 1.15em;
 	text-align: center;
     --urlbar-toolbar-height: 31px !important;
-	 color: #FFC0CB !important;
-
-
+	color: #FFC0CB !important;
 }
 
-
 #PersonalToolbar{ transition: transform 200ms ease 1s !important; position: relative; z-index: 1 }
-
 
 :root[sessionrestored]:not([inFullscreen]) > body > #browser{ margin-top: var(--uc-navbar-transform); }
 
@@ -68,28 +66,6 @@ padding-top: 1px;
 
  */
 
-
-
-:root{ --uc-navbar-transform: -40px }
-:root[uidensity="compact"]{ --uc-navbar-transform: -34px }
-
-#navigator-toolbox > div{ display: contents; }
-:root[sessionrestored] :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
-  transform: translateY(var(--uc-navbar-transform))
-}
-:root:is([customizing],[chromehidden*="toolbar"]) :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
-  transform: none !important;
-  opacity: 1 !important;
-}
-
-#nav-bar:not([customizing]){
-  opacity: 0;
-  transition:  transform 150ms ease 1s, opacity 150ms ease 1s !important;
-  position: relative;
-  z-index: 2;
-}
-#TabsToolbar{ position: relative; z-index: 3 }
-
 :root {
 	--firefox-grey: #1c1b22;
 	--focused-color-theme: #fff;
@@ -102,20 +78,20 @@ padding-top: 1px;
   transition: color 2s ease-out;
 
 }
+
 /* Url bar outline when searching */
 #urlbar[open] > #urlbar-background {
 	border:none !important;
   box-shadow: none !important;
 }
+
 #urlbar:focus-within {
     font-size: 1.15em;
 	text-align: center;
     --urlbar-toolbar-height: 31px !important;
-	 color: #ff887f !important;
-	
-
-
+	color: #ff887f !important;
 }
+
 /*shouldnt turn black on close*/
 #navigator-toolbox:focus-within{
 	background-color: var(--focused-color-theme) !important;
@@ -126,42 +102,37 @@ padding-top: 1px;
     background-color: inherit !important;
 
 }
+
 .tab-content{
 	background-color:  inherit !important;
 }
 
 .tabbrowser-tab:is([selected], [multiselected]):-moz-lwtheme {
-  color:black;
+    color:black;
 }
 
 * {
-
-	 --focus-outline-color: transparent !important;
+	--focus-outline-color: transparent !important;
 }
+
 /*  focused address bad selection */
 #urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
 #searchbar:focus-within:-moz-lwtheme {
- background-color: var(--focused-color-theme) !important; 
+	background-color: var(--focused-color-theme) !important; 
 }
-
-
 
 /*  area behind tabs */
 #navigator-toolbox:-moz-window-inactive:-moz-lwtheme {
     background-color: inherit;
 }
 
-
 /* New tab button */
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
-
   fill: pink;
 }
 
 #urlbar-background, #searchbar {
   background-color: var(--firefox-grey) !important;
-
-
 }
 
 /*urlbar box shadow*/
@@ -183,14 +154,17 @@ padding-top: 1px;
   background-repeat: repeat-x, repeat-x, no-repeat;
   background-size: auto 100%, auto 100%, auto auto;
 }
+
 /*shadows around tabs*/
 #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
   box-shadow:none !important;
 }
+
 /*Mouse hovering over tab color*/
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
   background-color: pink !important;
 }
+
 /*Nav bar transition*/
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
 
