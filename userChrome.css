@@ -174,3 +174,7 @@ padding-top: 1px;
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border-top: none !important;
 }
+
+.tabbrowser-tab {
+  min-height: 0 !important;
+}
