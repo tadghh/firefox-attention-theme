@@ -88,6 +88,12 @@ padding-top: 1px;
   box-shadow: none !important;
 }
 
+/*elements to the left of url bar*/
+#nav-bar-customization-target:focus-within > #customizableui-special-spring1{
+	display: none;
+}
+
+/*elements to the right of the url bar*/
 #urlbar-container:focus-within + #customizableui-special-spring2{
 	display: none;
 }
