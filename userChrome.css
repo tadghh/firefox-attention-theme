@@ -72,6 +72,8 @@ padding-top: 1px;
   --focused-color-dark: black;
 }
 
+
+
 #urlbar, #searchbar {
     font-size: 1.15em;
 	text-align: center;
@@ -84,6 +86,10 @@ padding-top: 1px;
 #urlbar[open] > #urlbar-background {
 	border:none !important;
   box-shadow: none !important;
+}
+
+#urlbar-container:focus-within + #customizableui-special-spring2{
+	display: none;
 }
 
 #urlbar:focus-within {
