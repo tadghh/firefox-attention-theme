@@ -69,6 +69,7 @@ padding-top: 1px;
 :root {
 	--firefox-grey: #1c1b22;
 	--focused-color-theme: #fff;
+  --focused-color-dark: black;
 }
 
 #urlbar, #searchbar {
@@ -86,10 +87,10 @@ padding-top: 1px;
 }
 
 #urlbar:focus-within {
-    font-size: 1.15em;
+  font-size: 1.15em;
 	text-align: center;
-    --urlbar-toolbar-height: 31px !important;
-	color: #ff887f !important;
+  --urlbar-toolbar-height: 31px !important;
+	color: var(--focused-color-dark) !important;
 }
 
 /*shouldnt turn black on close*/
