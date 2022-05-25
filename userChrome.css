@@ -70,6 +70,7 @@ padding-top: 1px;
 	--firefox-grey: #1c1b22;
 	--focused-color-theme: #fff;
   --focused-color-dark: black;
+    
 }
 
 
@@ -89,9 +90,14 @@ padding-top: 1px;
 }
 
 /*hides buttons on focus*/
-#nav-bar-customization-target:focus-within > toolbarspring, #nav-bar-customization-target:focus-within > toolbarbutton{
+#nav-bar-customization-target:hover > toolbarspring, #nav-bar-customization-target:hover > toolbarbutton{
 	display: none;
 }
+
+#nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem{
+	display: none;
+}
+
 
 #urlbar:focus-within {
   font-size: 1.15em;
