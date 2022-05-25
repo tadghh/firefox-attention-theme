@@ -94,7 +94,7 @@ padding-top: 1px;
 	display: none;
 }
 
-#nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem{
+#nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
 	fill: var(--focused-color-contrast) !important;
 }
 
@@ -102,7 +102,7 @@ padding-top: 1px;
 #urlbar:focus-within {
   font-size: 1.15em;
 	text-align: center;
-  --urlbar-toolbar-height: 31px !important;
+  --urlbar-toolbar-height: 40px !important;
 	color: var(--focused-color-dark) !important;
 }
 
@@ -189,9 +189,7 @@ padding-top: 1px;
   border-top: none !important;
 }
 
-.tabbrowser-tab {
-  min-height: 0 !important;
-}
+
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
   transition: none !important;
