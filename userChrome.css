@@ -70,7 +70,7 @@ padding-top: 1px;
 	--firefox-grey: #1c1b22;
 	--focused-color-theme: #fff;
   --focused-color-dark: black;
-    
+    --focused-color-contrast: black;
 }
 
 
@@ -95,7 +95,7 @@ padding-top: 1px;
 }
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem{
-	display: none;
+	fill: var(--focused-color-contrast) !important;
 }
 
 
