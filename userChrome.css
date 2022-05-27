@@ -78,7 +78,7 @@ padding-top: 1px;
 #urlbar, #searchbar {
     font-size: 1.15em;
 	text-align: center;
-	 color: #FFC0CB !important;
+	 color: var(--focused-color-theme) !important;
   transition: color 2s ease-out;
 
 }
@@ -175,8 +175,9 @@ padding-top: 1px;
 }
 
 /*Mouse hovering over tab color*/
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
-  background-color: pink !important;
+.tabbrowser-tab:hover > .tab-stack > .tab-background,.tabbrowser-tab:hover > stack > hbox >vbox {
+  background-color: white !important;
+  color: black !important;
 }
 
 /*Nav bar transition*/
