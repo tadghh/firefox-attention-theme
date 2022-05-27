@@ -195,3 +195,8 @@ padding-top: 1px;
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
   transition: none !important;
 }
+
+/*tab Text change when urlbar is focused*/
+#navigator-toolbox-background:focus-within > toolbox >vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > tab > stack > hbox > vbox{
+  color: red;
+}
