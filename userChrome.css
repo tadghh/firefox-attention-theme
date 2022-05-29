@@ -90,12 +90,18 @@ padding-top: 1px;
 }
 
 /*hides buttons on focus*/
-#nav-bar-customization-target:hover > toolbarspring, #nav-bar-customization-target:hover > toolbarbutton{
+#nav-bar-customization-target:focus-within:hover  > toolbarspring, #nav-bar-customization-target:focus-within:hover  > toolbarbutton{
 	display: none;
 }
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
 	fill: var(--focused-color-contrast) !important;
+}
+
+
+/*Bookmark bar inverse */
+#navigator-toolbox:focus-within > #PersonalToolbar > toolbarbutton > label, #navigator-toolbox:focus-within > #PersonalToolbar > toolbaritem > hbox > scrollbox > toolbarbutton > label{
+	color: black !important;
 }
 
 
