@@ -77,7 +77,7 @@ padding-top: 1px;
 
 #urlbar, #searchbar {
     font-size: 1.15em;
-	text-align: center;
+	
 	 color: var(--focused-color-theme) !important;
   transition: color 2s ease-out;
 
@@ -91,7 +91,7 @@ padding-top: 1px;
 
 /*hides buttons on focus*/
 #nav-bar-customization-target:focus-within:hover  > toolbarspring, #nav-bar-customization-target:focus-within:hover  > toolbarbutton{
-	display: none;
+
 }
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
@@ -107,7 +107,7 @@ padding-top: 1px;
 
 #urlbar:focus-within {
   font-size: 1.15em;
-	text-align: center;
+
   --urlbar-toolbar-height: 40px !important;
 	color: var(--focused-color-dark) !important;
 }
@@ -211,4 +211,13 @@ padding-top: 1px;
 #navigator-toolbox-background:focus-within > toolbox >toolbar > toolbaritem > toolbarbutton > stack >image{
 	fill:black !important;
 
+}
+
+.urlbarView-url {
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.urlbarView-row-inner, .urlbarView-no-wrap {
+  justify-content: center !important;
 }
