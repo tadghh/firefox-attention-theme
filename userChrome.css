@@ -147,8 +147,8 @@ padding-top: 1px;
 }
 
 /* New tab button */
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
-  fill: pink;
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon{
+  fill: var(--focused-color-contrast);
 }
 
 #urlbar-background, #searchbar {
