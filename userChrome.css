@@ -89,7 +89,7 @@ padding-top: 1px;
   box-shadow: none !important;
 }
 
-/*hides buttons on focus*/
+/* Focused: hides buttons on focus*/
 #nav-bar-customization-target:focus-within:hover > toolbarspring, #urlbar-container:focus-within:hover ~ toolbarbutton{
 	display: none;
 }
@@ -100,7 +100,7 @@ padding-top: 1px;
 }
 
 
-/*Bookmark bar inverse */
+/* Focused: Bookmark bar inverse */
 #navigator-toolbox:focus-within > #PersonalToolbar > toolbarbutton > label, #navigator-toolbox:focus-within > #PersonalToolbar > toolbaritem > hbox > scrollbox > toolbarbutton > label{
 	color: black !important;
 }
@@ -212,6 +212,7 @@ padding-top: 1px;
 	fill:black !important;
 }
 
+/*URL bar center aligned text */
 .urlbarView-url {
 	flex-grow: 0 !important;
 	flex-shrink: 0 !important;
@@ -230,11 +231,10 @@ padding-top: 1px;
 
 /*tab close icon hover */
 .tabbrowser-tab:hover > stack > hbox > image {
-
   color: black !important;
 }
 
-
+/* Focused: Bookmark text color inverse */
 #navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
 	color: black !important;
 }
