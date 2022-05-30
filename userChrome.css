@@ -226,3 +226,10 @@ padding-top: 1px;
   background-color: black !important;
   color: white !important;
 }
+
+
+/*tab close icon hover */
+.tabbrowser-tab:hover > stack > hbox > image {
+
+  color: black !important;
+}
