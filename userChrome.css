@@ -238,3 +238,8 @@ padding-top: 1px;
 #navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
 	color: black !important;
 }
+
+/*Url bar text color */
+.urlbarView-url {
+	color: #004953 !important;
+}
