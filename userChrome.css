@@ -77,7 +77,7 @@ padding-top: 1px;
 
 #urlbar, #searchbar {
     font-size: 1.15em;
-	
+	text-align: center;
 	 color: var(--focused-color-theme) !important;
   transition: color 2s ease-out;
 
@@ -90,8 +90,13 @@ padding-top: 1px;
 }
 
 /*hides buttons on focus*/
-#nav-bar-customization-target:focus-within:hover  > toolbarspring, #nav-bar-customization-target:focus-within:hover  > toolbarbutton{
+#nav-bar-customization-target:focus-within > toolbarspring, #nav-bar-customization-target:focus-within  > toolbarbutton{
+	display: none;
+}
 
+/*on hover max urlbar smaller */
+#nav-bar-customization-target:hover  > toolbarspring, #nav-bar-customization-target:hover  > toolbarbutton{
+	display: block;
 }
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
@@ -106,9 +111,8 @@ padding-top: 1px;
 
 
 #urlbar:focus-within {
-  font-size: 1.15em;
-
-  --urlbar-toolbar-height: 40px !important;
+	font-size: 1.15em;
+	--urlbar-toolbar-height: 40px !important;
 	color: var(--focused-color-dark) !important;
 }
 
@@ -210,12 +214,11 @@ padding-top: 1px;
 /*hamburger icons will change color */
 #navigator-toolbox-background:focus-within > toolbox >toolbar > toolbaritem > toolbarbutton > stack >image{
 	fill:black !important;
-
 }
 
 .urlbarView-url {
-  flex-grow: 0 !important;
-  flex-shrink: 0 !important;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
 }
 
 .urlbarView-row-inner, .urlbarView-no-wrap {
