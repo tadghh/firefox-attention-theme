@@ -94,10 +94,6 @@ padding-top: 1px;
 	display: none;
 }
 
-/*on hover max urlbar smaller */
-#nav-bar-customization-target:hover  > toolbarspring, #nav-bar-customization-target:hover  > toolbarbutton{
-	
-}
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
 	fill: var(--focused-color-contrast) !important;
