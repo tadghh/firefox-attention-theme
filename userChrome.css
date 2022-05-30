@@ -90,7 +90,7 @@ padding-top: 1px;
 }
 
 /*hides buttons on focus*/
-#nav-bar-customization-target:focus-within > toolbarspring, #urlbar-container:focus-within ~ toolbarbutton{
+#nav-bar-customization-target:focus-within:hover > toolbarspring, #urlbar-container:focus-within:hover ~ toolbarbutton{
 	display: none;
 }
 
@@ -232,4 +232,9 @@ padding-top: 1px;
 .tabbrowser-tab:hover > stack > hbox > image {
 
   color: black !important;
+}
+
+
+#navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
+	color: black !important;
 }
