@@ -251,3 +251,8 @@ padding-top: 1px;
 	#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stakc hbox image{
 		color: black !important;
 	}
+	
+	/*New tab icon */
+	.toolbarbutton-icon{
+	fill: white !important;
+}
