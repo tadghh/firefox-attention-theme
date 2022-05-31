@@ -243,3 +243,11 @@ padding-top: 1px;
 .urlbarView-url {
 	color: #004953 !important;
 }
+
+.tab-close-button{
+	color: white !important;
+	}
+	/* Focused: Tab close button */
+	#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stakc hbox image{
+		color: black !important;
+	}
