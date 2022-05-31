@@ -256,3 +256,7 @@ padding-top: 1px;
 	.tab-close-button{
 	fill: white !important;
 }
+
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
+		fill: white !important;
+	}
