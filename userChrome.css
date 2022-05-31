@@ -248,8 +248,8 @@ padding-top: 1px;
 	color: white !important;
 	}
 	/* Focused: Tab close button */
-	#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stakc hbox image{
-		color: black !important;
+	#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox image{
+		fill: black !important;
 	}
 	
 	/*New tab icon */
