@@ -242,19 +242,17 @@ padding-top: 1px;
 	color: #004953 !important;
 }
 
-.tab-close-button{
-	color: white !important;
-	}
-	/* Focused: Tab close button */
-	#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox image{
-		fill: black !important;
-	}
+
+/* Focused: Tab close button */
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox image{
+	fill: black !important;
+}
 	
-	/*New tab icon */
-	.tab-close-button{
-	fill: white !important;
+/*New tab icon */
+.tab-close-button{
+	fill: white;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
-		fill: white !important;
-	}
+	fill: white !important;
+}
