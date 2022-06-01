@@ -184,17 +184,10 @@ padding-top: 1px;
   color: black !important;
 }
 
-/*Nav bar transition*/
-:root[sessionrestored] #nav-bar:-moz-lwtheme {
-
-}
-
 /*Line seperator between search results and address bar*/
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border-top: none !important;
 }
-
-
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
   transition: none !important;
@@ -247,11 +240,16 @@ padding-top: 1px;
 	fill: black !important;
 }
 	
-/*New tab icon */
+/*Close tab icon */
 .tab-close-button{
 	fill: white;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
+	fill: white !important;
+}
+
+/*New tab icon */
+#tabs-newtab-button .toolbarbutton-icon{
 	fill: white !important;
 }
