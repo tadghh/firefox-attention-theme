@@ -69,8 +69,9 @@ padding-top: 1px;
 :root {
 	--firefox-grey: #1c1b22;
 	--focused-color-theme: #fff;
-  --focused-color-dark: black;
+    --focused-color-dark: black;
     --focused-color-contrast: black;
+	--focus-outline-color: transparent !important;
 }
 
 
@@ -131,9 +132,6 @@ padding-top: 1px;
     color:black;
 }
 
-* {
-	--focus-outline-color: transparent !important;
-}
 
 /*  focused address bad selection */
 #urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
