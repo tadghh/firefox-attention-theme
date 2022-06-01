@@ -144,10 +144,6 @@ padding-top: 1px;
     background-color: inherit;
 }
 
-/* New tab button */
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon{
-  fill: var(--focused-color-contrast);
-}
 
 #urlbar-background, #searchbar {
   background-color: var(--firefox-grey) !important;
@@ -252,4 +248,8 @@ padding-top: 1px;
 /*New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
 	fill: white !important;
+}
+
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
+	  fill: var(--focused-color-contrast) !important;
 }
