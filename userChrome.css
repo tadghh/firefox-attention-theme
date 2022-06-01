@@ -226,9 +226,8 @@ padding-top: 1px;
   color: white !important;
 }
 
-
 /*tab close icon hover */
-.tabbrowser-tab:hover > stack > hbox > image {
+.tabbrowser-tab:hover > stack > hbox > .tab-close-button {
   color: black !important;
 }
 
