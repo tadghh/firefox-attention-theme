@@ -100,6 +100,9 @@ max-width: 0px !important;
 transition: max-width 0.2s ease;
 max-width: 160px !important;
 }
+
+
+
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
 	fill: var(--focused-color-contrast) !important;
 }
@@ -110,11 +113,18 @@ max-width: 160px !important;
 	color: black !important;
 }
 
+/*Search result fade in */
+#urlbar{
+  transition: opacity .5s ease;
+  opacity: 50%;
+}
 
 #urlbar:focus-within {
 	font-size: 1.15em;
 	--urlbar-toolbar-height: 40px !important;
 	color: var(--focused-color-dark) !important;
+	transition: opacity .5s ease;
+    opacity: 100%;
 }
 
 /*shouldnt turn black on close*/
