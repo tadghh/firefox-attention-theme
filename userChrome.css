@@ -286,3 +286,7 @@ z-index: 3;
 toolbar[overflowable][customizing] > .customization-target {
   overflow: visible !important;
 }
+
+#urlbar:not([open]) > .urlbarView, #urlbar:not([breakout]) > .urlbarView {
+  display: block !important;
+}
