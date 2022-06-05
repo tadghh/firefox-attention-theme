@@ -128,9 +128,13 @@ max-width: 160px !important;
 
 /*shouldnt turn black on close*/
 #navigator-toolbox:focus-within{
+  transition: background-color .4s;
 	background-color: var(--focused-color-theme) !important;
 }
-
+#navigator-toolbox, .browser-toolbar, .tab-content,#urlbar-background, #searchbar{
+  transition: background-color .4s;
+	background-color: var(--firefox-grey) !important;
+}
 /*area behind tabs active*/
 .browser-toolbar{
     background-color: inherit !important;
@@ -153,15 +157,7 @@ max-width: 160px !important;
 	background-color: transparent !important; 
 }
 
-/*  area behind tabs */
-#navigator-toolbox:-moz-window-inactive:-moz-lwtheme {
-    background-color: inherit;
-}
 
-
-#urlbar-background, #searchbar {
-  background-color: transparent !important;
-}
 
 /*urlbar box shadow*/
 #urlbar[focused="true"] > #urlbar-background,
@@ -261,19 +257,12 @@ max-width: 160px !important;
 	  fill: var(--focused-color-contrast) !important;
 }
 
-.urlbarView{
-   transition: background-color 2s;
-  background-color: gray;
-    transition: opacity .6s;
-  opacity: 0%; 
-}
 #nav-bar:focus-within hbox #urlbar-container .urlbarView{
-  transition: background-color 2s;
+  transition: background-color .2s;
   background-color: white;
-    transition: opacity .6s ;
+    transition: opacity .1s ;
   opacity: 100%; 
 }
-
 
 #nav-bar{
 z-index: 3;
@@ -288,5 +277,6 @@ toolbar[overflowable][customizing] > .customization-target {
 }
 
 #urlbar:not([open]) > .urlbarView, #urlbar:not([breakout]) > .urlbarView {
-  display: block !important;
+  display: block;
 }
+
