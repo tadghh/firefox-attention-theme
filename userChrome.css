@@ -160,7 +160,7 @@ max-width: 160px !important;
 
 
 #urlbar-background, #searchbar {
-  background-color: var(--firefox-grey) !important;
+  background-color: transparent !important;
 }
 
 /*urlbar box shadow*/
@@ -173,7 +173,7 @@ max-width: 160px !important;
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
 
-  background-image: none !important;
+	background-image: none !important;
 }
 
 /*shadows around tabs*/
