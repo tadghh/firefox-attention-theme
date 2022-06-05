@@ -120,8 +120,7 @@ max-width: 160px !important;
 }
 
 #urlbar:focus-within {
-	font-size: 1.15em;
-	--urlbar-toolbar-height: 40px !important;
+
 	color: var(--focused-color-dark) !important;
 	transition: opacity .5s ease;
     opacity: 100%;
@@ -259,4 +258,15 @@ max-width: 160px !important;
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
 	  fill: var(--focused-color-contrast) !important;
+}
+
+.urlbarView{
+    background: white;
+    transition: opacity .6s;
+  opacity: 0%; 
+}
+#nav-bar:focus-within hbox #urlbar-container .urlbarView{
+  
+    transition: opacity .6s ;
+  opacity: 100%; 
 }
