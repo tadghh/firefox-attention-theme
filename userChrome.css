@@ -131,13 +131,13 @@ max-width: 160px !important;
   transition: background-color .4s;
 	background-color: var(--focused-color-theme) !important;
 }
-#navigator-toolbox, .browser-toolbar, .tab-content,#urlbar-background, #searchbar{
+#navigator-toolbox, .tab-content,#urlbar-background, #searchbar{
   transition: background-color .4s;
 	background-color: var(--firefox-grey) !important;
 }
 /*area behind tabs active*/
 .browser-toolbar{
-    background-color: inherit !important;
+    background-color: transparent !important;
 
 }
 
