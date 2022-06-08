@@ -177,10 +177,16 @@ max-width: 160px !important;
   box-shadow:none !important;
 }
 
+
 /*Mouse hovering over tab color*/
-.tabbrowser-tab:hover > .tab-stack > .tab-background,.tabbrowser-tab:hover > stack > hbox >vbox {
+.tabbrowser-tab:hover > .tab-stack > .tab-background{
+  transition: background-color 2s;
   background-color: white !important;
-  color: black !important;
+
+}
+.tabbrowser-tab:hover > stack > hbox >vbox{
+  transition: color 1s;
+    color: black !important;
 }
 
 /*Line seperator between search results and address bar*/
