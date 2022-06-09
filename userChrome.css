@@ -248,7 +248,8 @@ max-width: 160px !important;
 	
 /*Close tab icon */
 .tab-close-button{
-	fill: white;
+  transition: color 2s;
+	color: white !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
