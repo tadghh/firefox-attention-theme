@@ -196,6 +196,12 @@ max-width: 160px !important;
     color: black !important;
 }
 
+.tabbrowser-tab > stack > hbox >vbox{
+  transition: color 1s;
+    color: white !important;
+}
+
+
 /*Line seperator between search results and address bar*/
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border-top: none !important;
