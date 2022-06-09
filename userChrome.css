@@ -226,6 +226,7 @@ max-width: 160px !important;
 
 /*tab close icon hover */
 .tabbrowser-tab:hover > stack > hbox > .tab-close-button {
+  transition: color 1s;
   color: black !important;
 }
 
