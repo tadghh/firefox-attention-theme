@@ -179,28 +179,27 @@ max-width: 160px !important;
 
 
 /*Mouse hovering over tab color*/
-.tabbrowser-tab:hover > .tab-stack > .tab-background{
+.tabbrowser-tab:hover > .tab-stack > .tab-background, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-background{
   transition: background-color 2s;
   background-color: white !important;
 
 }
 
-.tabbrowser-tab > .tab-stack > .tab-background{
+.tabbrowser-tab > .tab-stack > .tab-background,#navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack:hover .tab-background{
   transition: background-color 2s;
   background-color: var(--firefox-grey) !important;
 
 }
-
-.tabbrowser-tab:hover > stack > hbox >vbox{
+.tabbrowser-tab:hover > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content .tab-label-container {
   transition: color 1s;
     color: black !important;
 }
 
-.tabbrowser-tab > stack > hbox >vbox{
+
+.tabbrowser-tab > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content:hover .tab-label-container{
   transition: color 1s;
     color: white !important;
 }
-
 
 /*Line seperator between search results and address bar*/
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
@@ -233,8 +232,7 @@ max-width: 160px !important;
 
 /* Focused: Tab colors inverse on hover */
 #navigator-toolbox-background:focus-within  > toolbox > vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > .tabbrowser-tab:hover > .tab-stack > .tab-background,#navigator-toolbox-background:focus-within  > toolbox > vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > .tabbrowser-tab:hover > stack > hbox >vbox {
-  background-color: black !important;
-  color: white !important;
+
 }
 
 /*tab close icon hover */
