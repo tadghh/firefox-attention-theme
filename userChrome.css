@@ -205,13 +205,13 @@ padding-top: 1px;
 }
 
 .tabbrowser-tab > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content:hover .tab-label-container{
-  transition: color .4s;
+	transition: color .4s;
     color: white !important;
 }
 
 /*tab Text change when urlbar is focused*/
 #navigator-toolbox-background:focus-within > toolbox >vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > tab > stack > hbox > vbox{
-  color: var(--focused-color-contrast);
+	color: var(--focused-color-contrast);
 }
 
 /*hamburger icons will change color */
@@ -226,7 +226,7 @@ padding-top: 1px;
 }
 
 .urlbarView-row-inner, .urlbarView-no-wrap {
-  justify-content: center !important;
+	justify-content: center !important;
 }
 
 /* Focused: Tab colors inverse on hover */
@@ -234,10 +234,6 @@ padding-top: 1px;
 
 }
 
-
-
-
-	
 /*Tab Icons */	
 
 /* Focused: Tab close button */
@@ -253,7 +249,7 @@ padding-top: 1px;
 
 /*Close tab icon */
 .tab-close-button{
-  transition: color .4s;
+	transition: color .4s;
 	color: white !important;
 }
 
@@ -266,10 +262,8 @@ padding-top: 1px;
 	fill: white !important;
 }
 
-
-
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
-	  fill: var(--focused-color-contrast) !important;
+	fill: var(--focused-color-contrast) !important;
 }
 
 #nav-bar:focus-within hbox #urlbar-container .urlbarView{
@@ -278,23 +272,6 @@ padding-top: 1px;
     transition: opacity .4s ;
   opacity: 100%; 
 }
-
-#nav-bar{
-z-index: 3;
-}
-
-#nav-bar:not([urlbar-exceeds-toolbar-bounds]),
-/* When customizing, overflowable toolbars move automatically moved items back
- * from the overflow menu, but we still don't want to render them outside of
- * the customization target. */
-toolbar[overflowable][customizing] > .customization-target {
-  overflow: visible !important;
-}
-
-#urlbar:not([open]) > .urlbarView, #urlbar:not([breakout]) > .urlbarView {
-  display: block;
-}
-
 
 /* Focused: Bookmark text color inverse */
 #navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
