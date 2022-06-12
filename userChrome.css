@@ -74,39 +74,37 @@ padding-top: 1px;
 	--focus-outline-color: transparent !important;
 }
 
-
+:root[sessionrestored] #nav-bar:-moz-lwtheme {
+  transition: none !important;
+}
 
 #urlbar, #searchbar {
     font-size: 1.15em;
 	text-align: center;
-	 color: var(--focused-color-theme) !important;
-  transition: color .4s ease-out;
-
+    color: var(--focused-color-theme) !important;
+    transition: color .4s ease-out;
 }
 
 /* Url bar outline when searching */
 #urlbar[open] > #urlbar-background {
 	border:none !important;
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 /* Focused: hides seperators on focus*/
 #nav-bar-customization-target:focus-within:hover > toolbarspring{
-transition: max-width 0.2s ease;
-max-width: 0px !important;
+	transition: max-width 0.2s ease;
+	max-width: 0px !important;
 }
 
 #nav-bar-customization-target > toolbarspring{
-transition: max-width 0.2s ease;
-max-width: 160px !important;
+	transition: max-width 0.2s ease;
+	max-width: 160px !important;
 }
-
-
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
 	fill: var(--focused-color-contrast) !important;
 }
-
 
 /* Focused: Bookmark bar inverse */
 #navigator-toolbox:focus-within > #PersonalToolbar > toolbarbutton > label, #navigator-toolbox:focus-within > #PersonalToolbar > toolbaritem > hbox > scrollbox > toolbarbutton > label{
@@ -115,8 +113,8 @@ max-width: 160px !important;
 
 /*Search result fade in */
 #urlbar{
-  transition: opacity .5s ease;
-  opacity: 50%;
+	transition: opacity .5s ease;
+	opacity: 50%;
 }
 
 #urlbar:focus-within {
@@ -126,19 +124,46 @@ max-width: 160px !important;
     opacity: 100%;
 }
 
-/*shouldnt turn black on close*/
+/*Browser navigation box*/
 #navigator-toolbox:focus-within{
-  transition: background-color .4s;
-	background-color: var(--focused-color-theme) !important;
+	transition: background-color .4s;
+    background-color: var(--focused-color-theme) !important;
 }
-#navigator-toolbox, .tab-content,#urlbar-background, #searchbar{
-  transition: background-color .4s;
+
+#navigator-toolbox, .tab-content, #urlbar-background, #searchbar{
+	transition: background-color .4s;
 	background-color: var(--firefox-grey) !important;
 }
+
+/* URL Bar */
+
+/*urlbar box shadow*/
+#urlbar[focused="true"] > #urlbar-background,
+#searchbar:focus-within {
+	box-shadow: none !important;
+}
+
+/*  focused address bad selection */
+#urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
+#searchbar:focus-within:-moz-lwtheme {
+	background-color: transparent !important; 
+}
+
+/*Line seperator between search results and address bar*/
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+  border-top: none !important;
+}
+
+/*Url bar text color */
+.urlbarView-url {
+	color: #004953 !important;
+}
+
+/* Tabs */
+
 /*area behind tabs active*/
 .browser-toolbar{
     background-color: transparent !important;
-
 }
 
 .tab-content{
@@ -150,21 +175,6 @@ max-width: 160px !important;
 }
 
 
-/*  focused address bad selection */
-#urlbar:is([focused="true"], [open]):-moz-lwtheme > #urlbar-background,
-#searchbar:focus-within:-moz-lwtheme {
-  
-	background-color: transparent !important; 
-}
-
-
-
-/*urlbar box shadow*/
-#urlbar[focused="true"] > #urlbar-background,
-#searchbar:focus-within {
-  box-shadow: none !important;
-}
-
 /*Selected tab background */
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
@@ -174,40 +184,29 @@ max-width: 160px !important;
 
 /*shadows around tabs*/
 #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-  box-shadow:none !important;
+	box-shadow:none !important;
 }
-
 
 /*Mouse hovering over tab color*/
 .tabbrowser-tab:hover > .tab-stack > .tab-background, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-background{
-  transition: background-color .4s;
-  background-color: white !important;
+	transition: background-color .4s;
+	background-color: white !important;
 
 }
 
 .tabbrowser-tab > .tab-stack > .tab-background,#navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack:hover .tab-background{
-  transition: background-color .4s;
-  background-color: var(--firefox-grey) !important;
+	transition: background-color .4s;
+	background-color: var(--firefox-grey) !important;
 
 }
 .tabbrowser-tab:hover > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content .tab-label-container {
-  transition: color .4s;
+	transition: color .4s;
     color: black !important;
 }
-
 
 .tabbrowser-tab > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content:hover .tab-label-container{
   transition: color .4s;
     color: white !important;
-}
-
-/*Line seperator between search results and address bar*/
-#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
-  border-top: none !important;
-}
-
-:root[sessionrestored] #nav-bar:-moz-lwtheme {
-  transition: none !important;
 }
 
 /*tab Text change when urlbar is focused*/
@@ -235,42 +234,39 @@ max-width: 160px !important;
 
 }
 
-/*tab close icon hover */
-.tabbrowser-tab:hover > stack > hbox > .tab-close-button {
-  transition: color .4s;
-  color: black !important;
-}
 
-/* Focused: Bookmark text color inverse */
-#navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
-	color: black !important;
-}
 
-/*Url bar text color */
-.urlbarView-url {
-	color: #004953 !important;
-}
 
+	
+/*Tab Icons */	
 
 /* Focused: Tab close button */
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox image{
 	fill: black !important;
 }
-	
+
+/*Tab close icon hover */
+.tabbrowser-tab:hover > stack > hbox > .tab-close-button {
+  transition: color .4s;
+  color: black !important;
+}
+
 /*Close tab icon */
 .tab-close-button{
   transition: color .4s;
 	color: white !important;
 }
 
-#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
-	fill: white !important;
-}
-
 /*New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
 	fill: white !important;
 }
+
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
+	fill: white !important;
+}
+
+
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
 	  fill: var(--focused-color-contrast) !important;
@@ -299,3 +295,8 @@ toolbar[overflowable][customizing] > .customization-target {
   display: block;
 }
 
+
+/* Focused: Bookmark text color inverse */
+#navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
+	color: black !important;
+}
