@@ -75,7 +75,7 @@ padding-top: 1px;
 }
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
-  transition: none !important;
+	transition: none !important;
 }
 
 #urlbar, #searchbar {
@@ -118,7 +118,6 @@ padding-top: 1px;
 }
 
 #urlbar:focus-within {
-
 	color: var(--focused-color-dark) !important;
 	transition: opacity .4s ease;
     opacity: 100%;
@@ -151,7 +150,7 @@ padding-top: 1px;
 
 /*Line seperator between search results and address bar*/
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
-  border-top: none !important;
+	border-top: none !important;
 }
 
 /*Url bar text color */
@@ -178,7 +177,6 @@ padding-top: 1px;
 /*Selected tab background */
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
-
 	background-image: none !important;
 }
 
@@ -190,7 +188,7 @@ padding-top: 1px;
 /*Mouse hovering over tab color*/
 .tabbrowser-tab:hover > .tab-stack > .tab-background, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-background{
 	transition: background-color .4s;
-	background-color: white !important;
+	background-color: var(--focused-color-theme) !important;
 
 }
 
@@ -206,7 +204,7 @@ padding-top: 1px;
 
 .tabbrowser-tab > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content:hover .tab-label-container{
 	transition: color .4s;
-    color: white !important;
+    color: var(--focused-color-theme) !important;
 }
 
 /*tab Text change when urlbar is focused*/
@@ -229,11 +227,6 @@ padding-top: 1px;
 	justify-content: center !important;
 }
 
-/* Focused: Tab colors inverse on hover */
-#navigator-toolbox-background:focus-within  > toolbox > vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > .tabbrowser-tab:hover > .tab-stack > .tab-background,#navigator-toolbox-background:focus-within  > toolbox > vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > .tabbrowser-tab:hover > stack > hbox >vbox {
-
-}
-
 /*Tab Icons */	
 
 /* Focused: Tab close button */
@@ -243,23 +236,23 @@ padding-top: 1px;
 
 /*Tab close icon hover */
 .tabbrowser-tab:hover > stack > hbox > .tab-close-button {
-  transition: color .4s;
-  color: black !important;
+	transition: color .4s;
+	color: black !important;
 }
 
 /*Close tab icon */
 .tab-close-button{
 	transition: color .4s;
-	color: white !important;
+	color: var(--focused-color-theme) !important;
 }
 
 /*New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
-	fill: white !important;
+	fill: var(--focused-color-theme) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
-	fill: white !important;
+	fill: var(--focused-color-theme) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
@@ -268,8 +261,8 @@ padding-top: 1px;
 
 #nav-bar:focus-within hbox #urlbar-container .urlbarView{
   transition: background-color .4s;
-  background-color: white;
-    transition: opacity .4s ;
+  background-color: var(--focused-color-theme);
+  transition: opacity .4s ;
   opacity: 100%; 
 }
 
