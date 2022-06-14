@@ -135,6 +135,10 @@ padding-top: 1px;
 
 /* URL Bar */
 
+#urlbar-input {
+	opacity: 100%;
+}
+
 /*urlbar box shadow*/
 #urlbar[focused="true"] > #urlbar-background,
 #searchbar:focus-within {
