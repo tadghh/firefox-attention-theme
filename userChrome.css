@@ -161,6 +161,10 @@ padding-top: 1px;
 	color: #004953 !important;
 }
 
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected] {
+  background-color: var(--firefox-grey) !important;
+  color: var(--focused-color-theme) !important;
+}
 /* Tabs */
 
 .browser-toolbar, .tab-content{
