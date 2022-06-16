@@ -165,6 +165,11 @@ padding-top: 1px;
   background-color: var(--firefox-grey) !important;
   color: var(--focused-color-theme) !important;
 }
+
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner > .urlbarView-url{
+	color: white !important;
+}
+
 /* Tabs */
 
 .browser-toolbar, .tab-content{
