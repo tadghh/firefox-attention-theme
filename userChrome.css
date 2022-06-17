@@ -159,6 +159,7 @@ padding-top: 1px;
 /* Url bar text color */
 .urlbarView-url {
 	color: #004953 !important;
+	max-width: 50%;
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected] {
