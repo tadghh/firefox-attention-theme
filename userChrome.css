@@ -251,8 +251,15 @@ padding-top: 1px;
 /* Close tab icon */
 .tab-close-button{
 	transition: color .4s;
+	transition: background .1s !important;
 	color: var(--focused-color-theme) !important;
 }
+
+.tab-close-button:hover{
+	background: black !important;
+	fill: white !important;
+}
+
 
 /* New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
