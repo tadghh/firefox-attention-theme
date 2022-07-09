@@ -251,7 +251,7 @@ padding-top: 1px;
 /* Close tab icon */
 .tab-close-button{
 	transition: color .4s;
-	transition: background .15s !important;
+	transition: background .4s !important;
 	color: var(--focused-color-theme) !important;
 }
 
@@ -289,4 +289,11 @@ padding-top: 1px;
 /* Focused: Bookmark text color inverse */
 #navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
 	color: black !important;
+}
+
+
+/*Transition close icon animation issue fix */
+.tabbrowser-tab:not([labelendaligned], :hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: 7px !important;
+  width: 24px !important;
 }
