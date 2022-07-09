@@ -251,12 +251,12 @@ padding-top: 1px;
 /* Close tab icon */
 .tab-close-button{
 	transition: color .4s;
-	transition: background .1s !important;
+	transition: background .15s !important;
 	color: var(--focused-color-theme) !important;
 }
 
 .tab-close-button:hover{
-	background: black !important;
+	background: var(--firefox-grey) !important;
 	fill: white !important;
 }
 
@@ -264,6 +264,11 @@ padding-top: 1px;
 /* New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
 	fill: var(--focused-color-theme) !important;
+}
+
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox .tab-close-button:hover{
+  background: var(--focused-color-theme) !important;
+  fill:  var(--firefox-grey) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
