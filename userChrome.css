@@ -263,7 +263,13 @@ padding-top: 1px;
 
 /* New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
+	transition: background .4s !important;
 	fill: var(--focused-color-theme) !important;
+}
+
+#tabs-newtab-button:hover .toolbarbutton-icon {
+	background: white !important;
+	fill: black !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox .tab-close-button:hover{
