@@ -267,6 +267,11 @@ padding-top: 1px;
 	fill: var(--focused-color-theme) !important;
 }
 
+#navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button:hover .toolbarbutton-icon{
+	background: black !important;
+	fill: white !important;
+}	
+
 #tabs-newtab-button:hover .toolbarbutton-icon {
 	background: white !important;
 	fill: black !important;
@@ -303,3 +308,4 @@ padding-top: 1px;
   padding-inline-start: 7px !important;
   width: 24px !important;
 }
+
