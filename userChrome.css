@@ -336,4 +336,13 @@ fill: black !important;
 .tabbrowser-tab:hover:is([selected]) stack hbox vbox label{
 	color: white !important;
  }
- /*tab close icon stuff for selected tab
+ 
+ /* Selected tab when address bar is focused */
+  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-background{
+	background: black !important;
+  fill: white;
+}
+ #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-content .tab-label-container .tab-text{
+	color: white !important;
+
+}
