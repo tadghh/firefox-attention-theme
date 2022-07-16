@@ -317,10 +317,14 @@ padding-top: 1px;
 .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button {
 fill: black !important;
 }
+
+.tabbrowser-tab:is([selected]) > .tab-stack:hover > .tab-content > .tab-close-button {
+	fill: white !important; 
+}
 .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button:hover {
 background: white !important;
+fill: black !important;
 }
-
 .tabbrowser-tab:hover:is([selected]) .tab-stack .tab-background{
 	background: #48455e !important;
 
