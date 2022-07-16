@@ -340,9 +340,24 @@ fill: black !important;
  /* Selected tab when address bar is focused */
   #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-background{
 	background: black !important;
-  fill: white;
+	fill: white;
+}
+
+  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack:hover .tab-background{
+	background: #48455e  !important;
+
 }
  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-content .tab-label-container .tab-text{
 	color: white !important;
 
+}
+
+ #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button{
+	fill: black !important; 
+
+}
+
+ #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button:hover{
+	background: white !important;
+	fill: black !important;
 }
