@@ -59,18 +59,10 @@ padding-top: 1px;
 
 */
 
-/* Selection text
-   Check if window is in focus
-   Remove icons when user is typing in address bar
-   animation?
-
- */
-
 :root {
-	--firefox-grey: #48455e;
-	--focused-color-theme: #fff;
-    --focused-color-contrast: black;
-	--focus-outline-color: transparent !important;
+	--primary-color: #48455e;
+	--secondary-color: #fff;
+	--button-or-text-color-secondary: black;
 }
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
@@ -80,7 +72,7 @@ padding-top: 1px;
 #urlbar, #searchbar {
     font-size: 1.15em;
 	text-align: center;
-    color: var(--focused-color-theme) !important;
+    color: var(--secondary-color) !important;
     transition: color .4s ease-out;
 }
 
@@ -102,12 +94,12 @@ padding-top: 1px;
 }
 
 #nav-bar-customization-target:focus-within > toolbarbutton, #nav-bar-customization-target:focus-within > toolbaritem > toolbarbutton{
-	fill: var(--firefox-grey) !important;
+	fill: var(--primary-color) !important;
 }
 
 /* Focused: Bookmark bar text inverse */
 #navigator-toolbox:focus-within > #PersonalToolbar > toolbarbutton > label, #navigator-toolbox:focus-within > #PersonalToolbar > toolbaritem > hbox > scrollbox > toolbarbutton > label{
-	color: black !important;
+	color: var(--button-or-text-color-secondary) !important;
 }
 
 /*Search result fade in */
@@ -117,7 +109,7 @@ padding-top: 1px;
 }
 
 #urlbar:focus-within {
-	color: var(--firefox-grey) !important;
+	color: var(--primary-color) !important;
 	transition: opacity .4s ease;
     opacity: 100%;
 }
@@ -125,12 +117,12 @@ padding-top: 1px;
 /*Browser navigation box*/
 #navigator-toolbox:focus-within{
 	transition: background-color .4s;
-    background-color: var(--focused-color-theme) !important;
+    background-color: var(--secondary-color) !important;
 }
 
 #navigator-toolbox, .tab-content, #urlbar-background, #searchbar{
 	transition: background-color .4s;
-	background-color: var(--firefox-grey) !important;
+	background-color: var(--primary-color) !important;
 }
 
 /* URL Bar */
@@ -163,12 +155,12 @@ padding-top: 1px;
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected] {
-  background-color: var(--firefox-grey) !important;
-  color: var(--focused-color-theme) !important;
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner > .urlbarView-url{
-	color: white !important;
+	color: var(--secondary-color) !important;
 }
 
 /* Tabs */
@@ -178,7 +170,7 @@ padding-top: 1px;
 }
 
 .tabbrowser-tab:is([selected], [multiselected]):-moz-lwtheme {
-    color: black;
+    color: var(--button-or-text-color-secondary);
 }
 
 
@@ -196,33 +188,33 @@ padding-top: 1px;
 /* Mouse hovering over tab color*/
 .tabbrowser-tab:hover > .tab-stack > .tab-background, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-background{
 	transition: background-color .4s;
-	background-color: var(--focused-color-theme) !important;
+	background-color: var(--secondary-color) !important;
 
 }
 
 .tabbrowser-tab > .tab-stack > .tab-background,#navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack:hover .tab-background{
 	transition: background-color .4s;
-	background-color: var(--firefox-grey) !important;
+	background-color: var(--primary-color) !important;
 
 }
 .tabbrowser-tab:hover > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content .tab-label-container {
 	transition: color .4s;
-    color: black !important;
+    color: var(--button-or-text-color-secondary) !important;
 }
 
 .tabbrowser-tab > stack > hbox >vbox, #navigator-toolbox-background:focus-within #navigator-toolbox:focus-within #titlebar #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab .tab-stack .tab-content:hover .tab-label-container{
 	transition: color .4s;
-    color: var(--focused-color-theme) !important;
+    color: var(--secondary-color) !important;
 }
 
 /* tab Text change when urlbar is focused*/
 #navigator-toolbox-background:focus-within > toolbox >vbox > #TabsToolbar > .toolbar-items > hbox > tabs > arrowscrollbox > tab > stack > hbox > vbox{
-	color: var(--firefox-grey);
+	color: var(--primary-color);
 }
 
 /* hamburger icons will change color */
 #navigator-toolbox-background:focus-within > toolbox >toolbar > toolbaritem > toolbarbutton > stack >image{
-	fill: black !important;
+	fill: var(--button-or-text-color-secondary) !important;
 }
 
 /* URL bar center aligned text */
@@ -239,67 +231,67 @@ padding-top: 1px;
 
 /* Focused: Tab close button */
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox image{
-	fill: black !important;
+	fill: var(--button-or-text-color-secondary) !important;
 }
 
 /* Tab close icon hover */
 .tabbrowser-tab:hover > stack > hbox > .tab-close-button {
 	transition: color .4s;
-	color: black !important;
+	color: var(--button-or-text-color-secondary) !important;
 }
 
 /* Close tab icon */
 .tab-close-button{
 	transition: color .4s;
 	transition: background .4s !important;
-	color: var(--focused-color-theme) !important;
+	color: var(--secondary-color) !important;
 }
 
 .tab-close-button:hover{
-	background: var(--firefox-grey) !important;
-	fill: white !important;
+	background: var(--primary-color) !important;
+	fill: var(--secondary-color) !important;
 }
 
 
 /* New tab icon */
 #tabs-newtab-button .toolbarbutton-icon{
 	transition: background .4s !important;
-	fill: var(--focused-color-theme) !important;
+	fill: var(--secondary-color) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button:hover .toolbarbutton-icon{
 	background: black !important;
-	fill: white !important;
+	fill: var(--secondary-color) !important;
 }	
 
 #tabs-newtab-button:hover .toolbarbutton-icon {
-	background: white !important;
-	fill: black !important;
+	background: var(--secondary-color) !important;
+	fill: var(--button-or-text-color-secondary) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack hbox .tab-close-button:hover{
-  background: var(--focused-color-theme) !important;
-  fill:  var(--firefox-grey) !important;
+  background: var(--secondary-color) !important;
+  fill:  var(--primary-color) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox tab stack:hover hbox image{
-	fill: var(--focused-color-theme) !important;
+	fill: var(--secondary-color) !important;
 }
 
 #navigator-toolbox-background:focus-within toolbox vbox #TabsToolbar .toolbar-items hbox tabs arrowscrollbox #tabs-newtab-button .toolbarbutton-icon{
-	fill: var(--firefox-grey) !important;
+	fill: var(--primary-color) !important;
 }
 
 #nav-bar:focus-within hbox #urlbar-container .urlbarView{
 	transition: background-color .4s;
-	background-color: var(--focused-color-theme);
+	background-color: var(--secondary-color);
 	transition: opacity .4s ;
 	opacity: 100%; 
 }
 
 /* Focused: Bookmark text color inverse */
 #navigator-toolbox-background:focus-within > toolbox > #PersonalToolbar > toolbaritem > hbox > hbox > scrollbox > toolbarbutton > label{
-	color: black !important;
+	color: var(--button-or-text-color-secondary) !important;
 }
 
 
@@ -310,54 +302,55 @@ padding-top: 1px;
 }
 
 .tabbrowser-tab:is([selected]) .tab-stack .tab-background{
-	background: white !important;
+	background: var(--secondary-color) !important;
 
 }
 
 .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button {
-fill: black !important;
+fill: var(--button-or-text-color-secondary) !important;
 }
 
 .tabbrowser-tab:is([selected]) > .tab-stack:hover > .tab-content > .tab-close-button {
-	fill: white !important; 
+	fill: var(--secondary-color) !important; 
 }
 .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button:hover {
-background: white !important;
-fill: black !important;
+background: var(--secondary-color) !important;
+fill: var(--button-or-text-color-secondary) !important;
 }
 .tabbrowser-tab:hover:is([selected]) .tab-stack .tab-background{
-	background: #48455e !important;
+	background: var(--primary-color)  !important;
 
 }
 .tabbrowser-tab:is([selected]) stack hbox vbox label {
-  color: black !important;
+  color: var(--button-or-text-color-secondary) !important;
 }
 
 .tabbrowser-tab:hover:is([selected]) stack hbox vbox label{
-	color: white !important;
+	color: var(--secondary-color) !important;
  }
  
  /* Selected tab when address bar is focused */
   #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-background{
-	background: black !important;
-	fill: white;
+	background: var(--primary-color) !important;
+	fill: var(--secondary-color);
 }
 
   #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack:hover .tab-background{
-	background: #48455e  !important;
+	background: var(--primary-color)  !important;
 
 }
  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) .tab-stack .tab-content .tab-label-container .tab-text{
-	color: white !important;
+	color: var(--secondary-color) !important;
 
 }
 
  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button{
-	fill: black !important; 
+	fill: var(--secondary-color) !important; 
 
 }
 
  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar #TabsToolbar .toolbar-items #TabsToolbar-customization-target #tabbrowser-tabs arrowscrollbox .tabbrowser-tab:is([selected]) > .tab-stack > .tab-content > .tab-close-button:hover{
-	background: white !important;
-	fill: black !important;
+	background: var(--secondary-color) !important;
+	fill: var(--button-or-text-color-secondary) !important;
 }
+/*Color issue*/
