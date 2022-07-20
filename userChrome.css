@@ -63,6 +63,7 @@ padding-top: 1px;
 	--primary-color: #48455e;
 	--secondary-color: #fff;
 	--button-or-text-color-secondary: black;
+	--focus-outline-color: #FFF0 !important;
 }
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
@@ -354,3 +355,8 @@ fill: var(--button-or-text-color-secondary) !important;
 	fill: var(--button-or-text-color-secondary) !important;
 }
 /*Color issue*/
+
+.titlebar-button:hover{
+	stroke: var(--primary-color) !important;
+	background: var(--secondary-color) !important;
+}
