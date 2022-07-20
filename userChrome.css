@@ -356,7 +356,13 @@ fill: var(--button-or-text-color-secondary) !important;
 }
 /*Color issue*/
 
-.titlebar-button:hover{
+.titlebar-button:hover,  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar .titlebar-button:hover{
 	stroke: var(--primary-color) !important;
 	background: var(--secondary-color) !important;
+}
+
+
+ #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar .titlebar-button{
+	stroke: var(--secondary-color) !important;
+	background:  var(--primary-color) !important;
 }
