@@ -64,6 +64,7 @@ padding-top: 1px;
 	--secondary-color: #fff;
 	--button-or-text-color-secondary: black;
 	--focus-outline-color: #FFF0 !important;
+	
 }
 
 :root[sessionrestored] #nav-bar:-moz-lwtheme {
@@ -365,4 +366,29 @@ fill: var(--button-or-text-color-secondary) !important;
  #navigator-toolbox-background:focus-within #navigator-toolbox #titlebar .titlebar-button{
 	stroke: var(--secondary-color) !important;
 	background:  var(--primary-color) !important;
+}
+.toolbarbutton-icon{
+	fill: var(--secondary-color) !important;
+}
+
+#nav-bar-customization-target:focus-within toolbarbutton:not([disabled]) .toolbarbutton-icon{
+	fill: var(--primary-color) !important;
+	background: var(--secondary-color) !important;
+	
+}
+
+toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
+	fill: var(--primary-color) !important;
+	background: var(--secondary-color) !important;
+	
+}
+
+#nav-bar-customization-target:focus-within toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
+	fill: var(--secondary-color) !important;
+	background: var(--primary-color) !important;
+	
+}
+
+#nav-bar-customization-target:focus-within toolbarbutton:is([disabled]) .toolbarbutton-icon{
+	fill: var(--primary-color) !important;
 }
