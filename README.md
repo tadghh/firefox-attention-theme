@@ -1,2 +1,4 @@
-# firefox-attention-theme
-A theme built around hiding distractions when using the address bar
+
+A sleek themes designed around stimulating your brain with pretty stuff
+
+## Requirements 
