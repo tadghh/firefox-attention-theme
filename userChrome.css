@@ -107,13 +107,15 @@ padding-top: 1px;
 /*Search result fade in */
 #urlbar{
 	transition: opacity .5s ease;
-	opacity: 50%;
+}
+
+#urlbar-input::placeholder, .searchbar-textbox::placeholder {
+  opacity: 1 !important;
 }
 
 #urlbar:focus-within {
 	color: var(--primary-color) !important;
-	transition: opacity .4s ease;
-    opacity: 100%;
+
 }
 
 /*Browser navigation box*/
