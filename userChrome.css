@@ -392,3 +392,8 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 #nav-bar-customization-target:focus-within toolbarbutton:is([disabled]) .toolbarbutton-icon{
 	fill: var(--primary-color) !important;
 }
+
+.urlbarView{
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
