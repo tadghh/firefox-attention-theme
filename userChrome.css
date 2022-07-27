@@ -83,7 +83,10 @@ padding-top: 1px;
 	border: none !important;
     box-shadow: none !important;
 }
+#urlbar-background, #searchbar {
+  background-color: transparent !important;
 
+}
 /* Focused: hides seperators on focus*/
 #nav-bar-customization-target:focus-within:hover > toolbarspring{
 	transition: max-width 0.2s ease;
@@ -124,7 +127,7 @@ padding-top: 1px;
     background-color: var(--secondary-color) !important;
 }
 
-#navigator-toolbox, .tab-content, #urlbar-background, #searchbar{
+#navigator-toolbox{
 	transition: background-color .4s;
 	background-color: var(--primary-color) !important;
 }
