@@ -230,7 +230,7 @@ padding-top: 1px;
 	flex-shrink: 0 !important;
 }
 
-.urlbarView-row-inner, .urlbarView-no-wrap {
+.urlbarView-row-inner{
 	justify-content: center !important;
 }
 
