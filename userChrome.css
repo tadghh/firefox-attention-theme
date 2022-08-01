@@ -402,3 +402,17 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
+
+.toolbarbutton-1:hover stack{
+	background: white !important;
+}
+
+
+#nav-bar:focus-within toolbaritem .toolbarbutton-1:hover .toolbarbutton-badge-stack{
+	background:  var(--primary-color) !important;
+}
+
+#nav-bar:focus-within toolbaritem .toolbarbutton-1:hover .toolbarbutton-badge-stack .toolbarbutton-icon{
+	background:  var(--primary-color) !important;
+	fill: white !important;
+}
