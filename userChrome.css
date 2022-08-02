@@ -435,3 +435,7 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 #navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox #PlacesToolbarItems .bookmark-item:hover image{
 	background:  var(--primary-color)  !important;
 }
+
+.titlebar-min{
+	border-bottom-left-radius: 5px;
+}
