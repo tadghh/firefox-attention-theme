@@ -416,3 +416,22 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 	background:  var(--primary-color) !important;
 	fill: white !important;
 }
+
+.bookmark-item:hover{
+	background-color: var(--secondary-color) !important;
+	color: var(--button-or-text-color-secondary) !important;
+	
+}
+
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox scrollbox .bookmark-item:hover{
+	background:  var(--primary-color) !important;
+	color: white !important;
+}
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox scrollbox .bookmark-item:hover label{
+	
+	color: white !important;
+}
+
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox #PlacesToolbarItems .bookmark-item:hover image{
+	background:  var(--primary-color)  !important;
+}
