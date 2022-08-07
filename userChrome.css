@@ -439,3 +439,28 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 .titlebar-min{
 	border-bottom-left-radius: 5px;
 }
+
+/*Import Button */
+#import-button:hover{
+	background-color: var(--secondary-color) !important;
+	color: var(--button-or-text-color-secondary) !important;
+	
+}
+
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button:hover{
+	background:  var(--primary-color)  !important;
+	color: white !important;
+}
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button:hover .toolbarbutton-text{
+	
+	color: white !important;
+}
+
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button:hover .toolbarbutton-icon{
+	background-color: var(--primary-color) !important;
+	fill: var(--secondary-color)  !important;
+}
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button .toolbarbutton-icon{
+		background-color:  var(--secondary-color) !important;
+	fill: var(--primary-color)  !important;
+}
