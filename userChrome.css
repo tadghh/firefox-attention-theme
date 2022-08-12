@@ -427,13 +427,20 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 	background:  var(--primary-color) !important;
 	color: white !important;
 }
+
+/*Dupe?*/
 #navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox scrollbox .bookmark-item:hover label{
 	
 	color: white !important;
 }
 
 #navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox #PlacesToolbarItems .bookmark-item:hover image{
-	background:  var(--primary-color)  !important;
+	background: var(--primary-color)  !important;
+	fill: var(--secondary-color) !important;
+}
+#navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbar hbox #PlacesToolbarItems .bookmark-item image{
+	
+	fill: var(--primary-color)!important;
 }
 
 .titlebar-min{
@@ -451,6 +458,7 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 	background:  var(--primary-color)  !important;
 	color: white !important;
 }
+
 #navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button:hover .toolbarbutton-text{
 	
 	color: white !important;
@@ -460,6 +468,7 @@ toolbarbutton:hover:not([disabled]) .toolbarbutton-icon{
 	background-color: var(--primary-color) !important;
 	fill: var(--secondary-color)  !important;
 }
+
 #navigator-toolbox-background:focus-within #navigator-toolbox #PersonalToolbar #import-button .toolbarbutton-icon{
 		background-color:  var(--secondary-color) !important;
 	fill: var(--primary-color)  !important;
