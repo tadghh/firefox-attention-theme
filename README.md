@@ -12,7 +12,9 @@ A sleek theme designed around stimulating your brain with pretty stuff
 
 ## Preview
 
-![image](https://user-images.githubusercontent.com/47073445/182499772-0935633b-53ef-4f6d-a2ea-c469ac6ee389.png)
+![image](https://user-images.githubusercontent.com/47073445/185765073-0581ee4f-6ca1-471d-94c4-6fbc6abc5087.png)
 
+![image](https://user-images.githubusercontent.com/47073445/185765083-041db731-e60d-4d30-8405-823fdb730d58.png)
 
-![image](https://user-images.githubusercontent.com/47073445/182499802-a3d2ab66-24c4-40a3-a814-607cd7fae1c0.png)
+![image](https://user-images.githubusercontent.com/47073445/185765108-4ef4b769-ccf5-44ed-9608-25944fbc64f6.png)
+
